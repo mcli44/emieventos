@@ -1,0 +1,280 @@
+
+
+body{
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 2em;
+  margin: 0;
+  background-color: #55d6be;
+  font-family: 'Poppins', sans-serif;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 3.5em;
+  /*background-color: #6785B1;*/
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow:visible;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  z-index: 1;
+}
+
+.centrar{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+    
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  align-items: center;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 36px;
+  justify-content: flex-start;
+}
+
+.IconosFooter{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.IconosFooter a{
+  height: 24px;
+  cursor:pointer;
+}
+
+.CopyFooter{
+  
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  
+}
+
+.CopyFooter a{
+  margin-right: 0.8em;
+  text-decoration: none;
+  cursor:pointer;
+}
+
+
+
+.botonNav{
+  font-size:30px;
+  cursor:pointer;
+  margin-right: 0.5em;
+
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  opacity: 0.95;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 5px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.MenuX{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  transition: 0.3s;
+  margin-bottom: 0.5em;
+  
+}
+
+.MenuX a{
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+}
+
+.MenuX a:hover{
+  background-color: #0084ff;
+  border-radius: 50px;
+}
+
+.opcionesMenu{
+  margin-bottom: 1em;
+  width: fit-content;
+  margin-left: 30px;
+  transition: 0.3s;
+  
+}
+
+.opcionesMenu a{
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  padding: 7px 10px 7px 10px;
+}
+
+.opcionesMenu:hover{
+  background-color: #0084ff;
+  border-radius: 50px;
+}
+  
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+
+
+.Nombre{
+  /*background-color: rgb(0, 156, 177);*/
+    
+  font-family: 'Dancing Script', cursive;
+  font-size: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5em;   
+    
+}
+
+.Nombre img{
+    width: 70%;
+    margin-top: 0.3em;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.texto{
+  width: 100%;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+
+.botonWP{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+.botonWP button{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 180px;
+  background-color: #25D366;
+  height: 45px;
+  border-radius: 50px;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+.botonWP button:hover{
+  background-color: #075E54;
+  color: white;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+
+
+
+/*@media (min-width: 1022px) {   
+
+    nav{
+        font-size: 16px;
+        width: 65%;
+        height: 60px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-right: 1em ;
+    }
+
+    nav a{
+        text-decoration: none;
+        padding: 8px;
+        border-radius: 8px;
+    }
+
+    nav a:hover{
+        background-color: #008CBA;
+        color: white;
+    }
+}*/

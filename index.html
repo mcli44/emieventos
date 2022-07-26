@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emi Eventos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="elcss.css">
+</head>
+<body>
+    <header id="cabecera">
+        <span id="botonnav" class="botonNav" onclick="openNav()">&#9776;</span>
+    </header>
+
+    <div id="mySidenav" class="sidenav">
+        <div class="MenuX">
+            <a  href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        </div>
+        
+        <div class="opcionesMenu">
+            <a href="index.html">Inicio</a>
+        </div>
+        <div class="opcionesMenu">
+            <a href="#">Galeria</a>
+        </div>
+        <div class="opcionesMenu">
+            <a href="#">Contacto</a>
+        </div>
+    </div>
+
+
+
+    <div class="centrar">
+        <div class="Nombre">
+            <img src="Imagenes/logo-sinfondo.png" alt="Nombre">
+        </div>
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <img src="Imagenes/foto-evento1.jpg" style="width:100%">
+            </div>
+        
+            <div class="mySlides fade">
+                <img src="Imagenes/foto-evento2.jpg" style="width:100%">
+            </div>
+        
+            <div class="mySlides fade">
+                <img src="Imagenes/foto-evento3.jpg" style="width:100%">
+            </div>
+        
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div class="texto">
+            <h2>SOBRE NOSOTROS</h2>
+            <p>Escribir un texto sobre que es Emi Eventos. <br> Escribir cualidades positivas de Emi eventos.</p>
+        </div>
+        <div class="botonWP">
+            <button type="button" onclick="location.href='https://wa.me/1137892222/?text=probando%20como%20funciona'"><img src="Imagenes/whatsapp.png" alt="Whatsapp">Whatsapp</button>
+        </div>
+        
+    </div>
+
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("botonnav").style.display = "none";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("botonnav").style.display = "flex";
+        }
+    </script>
+
+    <script>
+        let slideIndex = 0;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+
+            slides[slideIndex-1].style.display = "block";
+        }
+
+        function plusSlides(n){
+            clearInterval(myTimer);
+            if (n < 0){
+                showSlides(slideIndex -= 1);
+            } 
+            else {
+                showSlides(slideIndex += 1); 
+            }
+            if (n === -1){
+                myTimer = setInterval(function(){plusSlides(n + 2)}, 3500);
+            } 
+            else {
+                myTimer = setInterval(function(){plusSlides(n + 1)}, 3500);
+            }
+        }
+
+        window.addEventListener("load",function() {
+            showSlides(slideIndex);
+            myTimer = setInterval(function(){plusSlides(1)}, 3500);
+        })
+
+    </script>
+
+    <footer>
+        <div class="IconosFooter">
+            <a href="https://wa.me/1137892222/?text=probando%20como%20funciona"><img src="Imagenes/whatsapp24px.png" alt="Whatsapp"></a>
+            <a href="#"><img src="Imagenes/instagram24px.png" alt="Instagram"></a>
+            <a href="https://www.facebook.com/emiieventos"><img src="Imagenes/facebook24px.png" alt="Facebook"></a>
+        </div>
+        <div class="CopyFooter">
+            <a href="#">&copy;</a>
+        </div>
+        
+    </footer>
+    <!-- Hacer referencia a:
+    <a href="https://www.flaticon.es/iconos-gratis/instagram" title="instagram iconos">Instagram iconos creados por Pixel perfect - Flaticon</a>
+    <a href="https://www.flaticon.es/iconos-gratis/whatsapp" title="whatsapp iconos">Whatsapp iconos creados por Freepik - Flaticon</a>
+    <a href="https://www.flaticon.es/iconos-gratis/facebook" title="facebook iconos">Facebook iconos creados por Pixel perfect - Flaticon</a>
+    -->
+</body>
+</html>
