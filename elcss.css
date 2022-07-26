@@ -81,6 +81,7 @@ footer {
   font-size:30px;
   cursor:pointer;
   margin-right: 0.5em;
+  
 
 }
 
@@ -165,8 +166,8 @@ footer {
 }
 
 .Nombre img{
-    width: 70%;
-    margin-top: 0.3em;
+  width: 70%;
+  margin-top: 0.3em;
 }
 
 * {box-sizing:border-box}
@@ -176,6 +177,16 @@ footer {
   max-width: 1000px;
   position: relative;
   margin: auto;
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
 }
 
 /* Hide the images by default */
@@ -240,6 +251,7 @@ footer {
   border-radius: 50px;
   border: none;
   font-family: 'Poppins', sans-serif;
+  color: black;
 }
 
 .botonWP button:hover{
