@@ -7,7 +7,10 @@ body{
   min-height: 100vh;
   padding-bottom: 2em;
   margin: 0;
-  background-color: #aaa6c7;
+  background-image: url("Imagenes/FondoTurquesa.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
+  /*background-color: #aaa6c7;*/
   font-family: 'Poppins', sans-serif;
 }
 
