@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeria</title>
+    <script src="ajuste.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="elcss.css">
 </head>
@@ -27,7 +28,7 @@
             <a href="#" > <img src="Imagenes/contactos.png" alt="ImgCoTrab" style="width: 20px;height:20px;"> Como <br>  Trabajamos</a>
         </div>-->
         <div class="opcionesMenu">
-            <a href="galeria.html" style="color: #D6AD60;"> <img src="Imagenes/galeriadorada.png" alt="ImgGal" style="width: 20px;height:20px;"> Galeria</a>
+            <a href="galeria.html" style="color: #d1a44e;"> <img src="Imagenes/galeriadorada.png" alt="ImgGal" style="width: 20px;height:20px;"> Galeria</a>
         </div>
         <div class="opcionesMenu">
             <a href="contacto.html"> <img src="Imagenes/contactoblanco.png" alt="ImgCont" style="width: 20px;height:20px;"> Contacto</a>
@@ -60,10 +61,38 @@
         <div id="RefImg7" class="divGaleria">
             <img src="Imagenes/foto-evento1.jpg">
         </div>
-        <!--<button type="button" class="botonHaciaIP" onclick="location.href='#inicioPagina'">&#8593</button>--> 
+        <!--<button type="button" class="botonHaciaIP" onclick="location.href='#inicioPagina'">&#8593</button>-->
+         
     </div>
     
+    
+    <script>
+        let anchoVP = window.innerWidth;
+        if(anchoVP >= 1022){
+                creadorNAV();
+        }
+    </script>
 
+    <script>
+        
+        window.addEventListener("resize", function(){
+            let anchoVP = window.innerWidth; 
+            if(anchoVP >= 1022){
+                if(document.getElementById("navbar") != null){
+                    reactivarMenu();
+                }
+                else{
+                    creadorNAV();
+                }
+                
+            }
+            if(anchoVP < 1022){
+                reactivarDes();
+            }
+        })
+            
+
+    </script>
 
     <script>
         function openNav() {

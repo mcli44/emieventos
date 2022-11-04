@@ -7,6 +7,8 @@
     <title>Emi Eventos</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="elcss.css">
+    <script src="ajuste.js"></script>
+    <title>Panaderia Forte</title>
 </head>
 <body>
     <header id="cabecera">
@@ -19,7 +21,7 @@
         </div>
         
         <div class="opcionesMenu">
-            <a href="index.html" style="color: #D6AD60;"><img src="Imagenes/hogardorado.png" alt="Imghome" style="width: 20px;height:20px;"> Inicio</a>
+            <a href="index.html" style="color: #d1a44e;"><img src="Imagenes/hogardorado.png" alt="Imghome" style="width: 20px;height:20px;"> Inicio</a>
         </div>
         <div class="opcionesMenu">
             <a href="servicios.html"> <img src="Imagenes/wedding-arch.png" alt="ImgServ" style="width: 20px;height:20px;"> Servicios</a>
@@ -31,7 +33,7 @@
             <a href="galeria.html"> <img src="Imagenes/galeriablanca.png" alt="ImgGal" style="width: 20px;height:20px;"> Galeria</a>
         </div>
         <div class="opcionesMenu">
-            <a href="contacto.html"> <img src="Imagenes/contactoblanco.png" alt="ImgCont" style="width: 20px;height:20px;"> Contacto</a>
+            <a href="contacto.html"> <img src="Imagenes/contactoblanco.png" alt="ImgCont" style="width: 20px;height:20px;"> Contactos</a>
         </div>
     </div>
 
@@ -144,6 +146,34 @@
             showSlides(slideIndex);
             myTimer = setInterval(function(){plusSlides(1)}, 3500);
         })
+
+    </script>
+
+    <script>
+        let anchoVP = window.innerWidth;
+        if(anchoVP >= 1022){
+                creadorNAV();
+        }
+    </script>
+
+    <script>
+        
+        window.addEventListener("resize", function(){
+            let anchoVP = window.innerWidth; 
+            if(anchoVP >= 1022){
+                if(document.getElementById("navbar") != null){
+                    reactivarMenu();
+                }
+                else{
+                    creadorNAV();
+                }
+                
+            }
+            if(anchoVP < 1022){
+                reactivarDes();
+            }
+        })
+            
 
     </script>
 

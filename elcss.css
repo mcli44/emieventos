@@ -41,7 +41,7 @@ footer {
   flex-direction: row;
   justify-content:space-around;
   align-items: center;
-  background-color: #2f227a;
+  background-color: #3174cd;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -91,7 +91,7 @@ footer {
 
 .botonNav:hover{
   color: white;
-  background-color: #2f227a;
+  background-color: #2f227c;
   opacity: 0.85;
   border-radius: 20px;
 }
@@ -130,7 +130,7 @@ footer {
 }
 
 .MenuX a:hover{
-  background-color: #2f227a;
+  background-color: #2f227c;
   border-radius: 20px;
 }
 
@@ -151,7 +151,7 @@ footer {
 }
 
 .opcionesMenu:hover{
-  background-color: #2f227a;
+  background-color: #2f227c;
   border-radius: 20px;
 }
   
@@ -173,7 +173,8 @@ footer {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-bottom: 0.5em;   
+  margin-bottom: 0.5em;
+  max-width: 720px;   
     
 }
 
@@ -215,17 +216,18 @@ footer {
   align-items: center;
   justify-content: space-evenly;
   width: 100px;
-  background-color: rgba(173, 70, 204, 0.774);
+  background-color:#3a90fd;
   height: 45px;
   border-radius: 50px;
   border: none;
   font-family: 'Poppins', sans-serif;
   color: black;
   font-size:medium;
+  cursor:pointer;
 }
 
 .botonSI button:hover{
-  background-color: #2f227a;
+  background-color: #2f227c;
   color: white;
 }
 
@@ -307,7 +309,7 @@ footer {
   align-items: center;
   justify-content: space-evenly;
   width: 150px;
-  background-color: rgba(173, 70, 204, 0.774);
+  background-color: #3a90fd;
   height: 45px;
   border-radius: 50px;
   border: none;
@@ -317,7 +319,7 @@ footer {
 }
 
 .botonCI button:hover{
-  background-color: #2f227a;
+  background-color: #2f227c;
   color: white;
 }
 
@@ -355,7 +357,7 @@ footer {
   justify-content: center;
   align-items: center;
   margin-bottom: 2em;
-  margin-top: 0.5em;
+  margin-top: 0.2em;
 }
 
 .boton button{
@@ -383,7 +385,7 @@ footer {
 
 .cp1{
   font-size: large;
-  margin-top: 2em;
+  margin-top: 1em;
 }
 
 .boton a{
@@ -414,6 +416,16 @@ footer {
 
 #FB:hover{
   background-color: #1C74D4;
+  color: white;
+}
+
+#IG{
+  width: 160px;
+  background-color: #d148ad;
+}
+
+#IG:hover{
+  background-color: #e54673;
   color: white;
 }
 
@@ -484,7 +496,8 @@ footer {
 
 .img1S{
   width: 100%;
-  height: auto;      
+  height: auto;
+        
 }
 
 @media screen and (max-height: 450px) {
@@ -496,26 +509,90 @@ footer {
 
 
 
-/*@media (min-width: 1022px) {   
+@media (min-width: 760px) {   
 
-    nav{
-        font-size: 16px;
-        width: 65%;
-        height: 60px;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        margin-right: 1em ;
-    }
+  .botonNav{
+    font-size: 38px;
+    margin-top: 0.3em;
+    margin-right: 0.55em;
+  }
 
-    nav a{
-        text-decoration: none;
-        padding: 8px;
-        border-radius: 8px;
-    }
+  .MenuX a{
+    font-size: 35px;
+  }
 
-    nav a:hover{
-        background-color: #008CBA;
-        color: white;
-    }
-}*/
+  .opcionesMenu a{
+    font-size: 35px;
+  }
+
+  .sidenav .closebtn{
+    font-size: 40px;
+  }
+
+  .IconosFooter{
+    justify-content: flex-start;
+  }
+
+  .IconosFooter a{
+    margin-left: 3.2em;
+  }
+
+  .img1S{
+    max-width: 700px;
+    max-height: 700px;
+  }
+
+  .slideshow-container{
+    max-width: 800px;
+  }
+
+  .divGaleria{
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+  }
+
+  .divGaleria img{
+    max-width: 700px;
+  }
+
+}
+
+
+
+
+@media (min-width: 1022px){
+
+  header{
+    width: 100%;
+    position:static;
+  }
+
+  nav{
+    font-size: 23px;
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+  }
+
+  nav a{
+    text-decoration: none;
+    padding: 8px;
+    margin-left: 1.5em;
+    color: rgb(0, 0, 0);
+  }
+
+  nav a:hover{
+    background-color: #2f227c;
+    opacity: 0.85;
+    border-radius: 20px;
+    color: white;
+  }
+
+
+  .imgIni{
+    margin-right: 0.25em;
+  }
+}
+    
